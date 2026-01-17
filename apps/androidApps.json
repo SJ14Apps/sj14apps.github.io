@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Weather",
+    "type": "App",
+    "logo": "https://sj14apps.com/img/projects/weather.png",
+    "info": "https://sj14apps.com/apps/Weather/info.json"
+  },
+  {
+    "name": "Json List",
+    "type": "App",
+    "logo": "https://sj14apps.com/img/projects/jsonlist.png",
+    "info": "https://sj14apps.com/apps/JsonList/info.json"
+  },
+  {
+    "name": "Password Manager",
+    "type": "App",
+    "logo": "https://sj14apps.com/img/projects/pm.png",
+    "info": "https://sj14apps.com/apps/PasswordManager/info.json"
+  }
+]
