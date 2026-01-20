@@ -67,3 +67,4 @@ loadHTML("nav", "../template/nav.html",
     }
 )
 loadHTML("contacts", "../template/contacts.html")
+loadHTML("footer", "../template/footer.html")
