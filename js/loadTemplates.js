@@ -54,7 +54,7 @@ function loadSplash(){
     const page = document.body.dataset.page;
     if (page === "home"){
         let script = document.createElement("script");
-        script.src = "../scriptHome.js";
+        script.src = "../js/scriptHome.js";
         document.body.appendChild(script);
     }
 }
