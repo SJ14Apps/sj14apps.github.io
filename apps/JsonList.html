@@ -17,39 +17,19 @@
     <meta name="theme-color" content="#0060f4"/>
 </head>
 <body>
-<div id="nav">
-    <div id="logo1">
-        <div id="logo">
-            <div class="l1"></div>
-            <div class="l2"></div>
-            <div class="l3"></div>
-            <div class="l4"></div>
-            <div class="l5"></div>
-            <div class="l6"></div>
-            <div class="l7"></div>
-            <div class="l8"></div>
+<script>
+    const navList= [
+        { text: "Home", href: "../?noSplash" },
+        { text: "Top", href: "#home" },
+        { text: "Links", href: "#links" },
+        { text: "Screenshots", href: "#screenshots" },
+        { text: "Versions", href: "#versions" },
+        { text: "Contact", href: "#contacts" },
+        { text: "Privacy Policy", href: "JsonList/privacy_policy.html" }
+    ]
+</script>
+<div id="nav"></div>
 
-        </div>
-    </div>
-    <a href="../?noSplash">
-        <img src="../img/logo.png" alt="logo">
-    </a>
-    <div id="nav_btn" onclick="showNav()">
-
-    </div>
-    <ul id="nav_ul">
-        <li><a href="../?noSplash">Home</a></li>
-        <li><a href="#home">Top</a></li>
-        <li><a href="#links">Links</a></li>
-        <li><a href="#screenshots">Screenshots</a></li>
-        <li><a href="#versions">Versions</a></li>
-        <li><a href="#contacts">Contact</a></li>
-        <li><a href="JsonList/privacy_policy.html">Privacy Policy</a></li>
-    </ul>
-
-
-
-</div>
 <div id="main">
     <div id="home" class="section">
         <div>

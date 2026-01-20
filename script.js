@@ -1,29 +1,15 @@
-let sections = document.querySelectorAll('.section');
-let menu = document.querySelectorAll('#nav_ul li a');
 let navBtn = document.getElementById('nav_btn');
 
 let isNavOpen = false;
 
-window.onscroll = () => {
 
+window.addEventListener('scroll', () => {
     document.body.style.setProperty(
         "--scroll",
         (window.scrollY / window.innerHeight).toString()
     );
+})
 
-    sections.forEach(i => {
-        let top = window.scrollY;
-        let offset = i.offsetTop - 150;
-        let height = i.offsetHeight;
-        let id = i.getAttribute('id');
-        if (top >= offset && top < offset + height){
-            menu.forEach(link => {
-                link.classList.remove('active');
-                document.querySelector('#nav_ul li a[href*=' + id + ']').classList.add('active');
-            })
-        }
-    });
-}
 
 document.addEventListener("keydown",  (e)=>{
     if (e.key === "Escape"){
