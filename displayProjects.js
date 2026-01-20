@@ -13,7 +13,7 @@ function loadJSON(filePath) {
     }
 }
 
-let data = loadJSON('/apps/apps.json');
+let data = loadJSON('/projects.json');
 data.forEach(a => {
 
     let prefix = "https://sj14apps.com/"
