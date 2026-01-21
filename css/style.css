@@ -365,9 +365,14 @@ pre {
     color: var(--nav-bg-color);
 }
 
-#versions-container div > a:hover {
+#home div a {
+    color: #0064ff;
+}
+
+#versions-container div > a:hover, #home div a:hover  {
     color: white;
 }
+
 #links-container a{
     display: flex;
     flex-flow: column;
