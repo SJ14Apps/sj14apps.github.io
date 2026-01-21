@@ -365,7 +365,7 @@ pre {
     color: var(--nav-bg-color);
 }
 
-#home div a {
+#home div h3 a {
     color: #0064ff;
 }
 
