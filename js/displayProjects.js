@@ -32,17 +32,27 @@ data.forEach(a => {
     let appContainer = document.createElement('div')
     appContainer.classList.add('corner')
     let img = document.createElement('img')
-    img.classList.add('corner-top')
+    img.classList.add('corner')
     img.src = image
     img.alt = a.name
     let title = document.createElement('h3')
     title.textContent = a.name
     let subTitle = document.createElement('h4')
     subTitle.textContent = a.type
+    let descTitle = document.createElement('h4')
+    descTitle.textContent = a.description
+
+    let textDiv = document.createElement('div')
+
+    textDiv.append(title)
+    textDiv.append(subTitle)
+    if (descTitle.textContent !== ""){
+        textDiv.append(document.createElement("br"))
+        textDiv.append(descTitle)
+    }
 
     appContainer.appendChild(img)
-    appContainer.appendChild(title)
-    appContainer.appendChild(subTitle)
+    appContainer.appendChild(textDiv)
     app.appendChild(appContainer)
 
     projectsContainer.appendChild(app)

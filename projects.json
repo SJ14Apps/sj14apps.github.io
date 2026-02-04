@@ -1,21 +1,24 @@
 [
   {
+    "name": "Json List",
+    "type": "Android App",
+    "image": "https://sj14apps.com/img/projects/jsonlist.png",
+    "link": "https://sj14apps.com/apps/JsonList",
+    "description": "Material You Android app for previewing and editing JSON from a file or URL in a user-friendly list format"
+  },
+  {
     "name": "SJ-Dialog",
     "type": "Android library",
     "image": "https://repository-images.githubusercontent.com/473367072/2dbc4ac2-711c-48e5-92f4-c55e083e81ac",
-    "link": "https://github.com/slavce14/SJ-Dialog"
+    "link": "https://github.com/slavce14/SJ-Dialog",
+    "description": "Android Library for creating custom dialogs"
   },
   {
     "name": "Weather",
     "type": "Android App",
     "image": "https://sj14apps.com/img/projects/weather.png",
-    "link": "https://sj14apps.com/apps/Weather"
-  },
-  {
-    "name": "Json List",
-    "type": "Android App",
-    "image": "https://sj14apps.com/img/projects/jsonlist.png",
-    "link": "https://sj14apps.com/apps/JsonList"
+    "link": "https://sj14apps.com/apps/Weather",
+    "description": "A simple weather app"
   },
   {
     "name": "Password Manager",
@@ -27,6 +30,7 @@
     "name": "Firework-android",
     "type": "Android library",
     "image": "https://sj14apps.com/img/projects/firework.jpg",
-    "link": "https://github.com/SlaVcE14/Firework-android"
+    "link": "https://github.com/SlaVcE14/Firework-android",
+    "description": "Simple firework android library"
   }
 ]
