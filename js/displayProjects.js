@@ -21,7 +21,7 @@ data.forEach(a => {
 
 
     let link = !isExternal ? "./" + a.link.slice(prefix.length) : a.link;
-    let image = !isExternal ? "./" + a.image.slice(prefix.length) : a.image;
+    let image = a.image.startsWith(prefix) ? "./" + a.image.slice(prefix.length) : a.image;
 
 
     let app = document.createElement('a')
@@ -51,6 +51,7 @@ data.forEach(a => {
         textDiv.append(descTitle)
     }
 
+    appContainer.style.setProperty("--accent", a.accentColor);
     appContainer.appendChild(img)
     appContainer.appendChild(textDiv)
     app.appendChild(appContainer)

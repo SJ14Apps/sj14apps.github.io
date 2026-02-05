@@ -4,33 +4,38 @@
     "type": "Android App",
     "image": "https://sj14apps.com/img/projects/jsonlist.png",
     "link": "https://sj14apps.com/apps/JsonList",
-    "description": "Material You Android app for previewing and editing JSON from a file or URL in a user-friendly list format"
+    "description": "Material You Android app for previewing and editing JSON from a file or URL in a user-friendly list format",
+    "accentColor": 216.441
   },
   {
     "name": "SJ-Dialog",
     "type": "Android library",
     "image": "https://repository-images.githubusercontent.com/473367072/2dbc4ac2-711c-48e5-92f4-c55e083e81ac",
     "link": "https://github.com/slavce14/SJ-Dialog",
-    "description": "Android Library for creating custom dialogs"
+    "description": "Android Library for creating custom dialogs",
+    "accentColor": 221.569
   },
   {
     "name": "Weather",
     "type": "Android App",
     "image": "https://sj14apps.com/img/projects/weather.png",
     "link": "https://sj14apps.com/apps/Weather",
-    "description": "A simple weather app"
+    "description": "A simple weather app",
+    "accentColor": 205.312
   },
   {
     "name": "Password Manager",
     "type": "Android App",
     "image": "https://sj14apps.com/img/projects/pm.png",
-    "link": "https://sj14apps.com/apps/PasswordManager"
+    "link": "https://sj14apps.com/apps/PasswordManager",
+    "accentColor": 216.441
   },
   {
     "name": "Firework-android",
     "type": "Android library",
     "image": "https://sj14apps.com/img/projects/firework.jpg",
     "link": "https://github.com/SlaVcE14/Firework-android",
-    "description": "Simple firework android library"
+    "description": "Simple firework android library",
+    "accentColor": 13.0127
   }
 ]
