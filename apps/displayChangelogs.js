@@ -34,7 +34,9 @@ data.forEach(l => {
     log.appendChild(code)
     changelog.appendChild(title)
     changelog.appendChild(log)
-    changelog.appendChild(donloadBtn)
+    if (l.file !== undefined)
+        changelog.appendChild(donloadBtn)
+
     changelogsContainer.appendChild(changelog)
 
 })
