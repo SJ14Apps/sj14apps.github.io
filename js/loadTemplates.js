@@ -48,6 +48,8 @@ function updateNav(){
             }
         });
     })
+
+    addEvents()
 }
 
 function loadSplash(){
