@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SJ-Dialog</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="../img/logo2.3.png">
+    <meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="theme-color" content="#0060f4"/>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+</head>
+<body>
+<script>
+    const navList= [
+        { text: "Home", href: "../?noSplash" },
+        { text: "Top", href: "#home" },
+        { text: "Links", href: "#links" },
+        { text: "Versions", href: "#versions" },
+        { text: "Contact", href: "#contacts" }
+    ]
+</script>
+<div id="nav"></div>
+
+<div id="main">
+    <div id="home" class="section">
+        <div>
+            <img src="https://repository-images.githubusercontent.com/473367072/2dbc4ac2-711c-48e5-92f4-c55e083e81ac" width="130" height="130" class="corner">
+            <h1>SJ-Dialog</h1>
+            <h3>Android Library for creating custom dialogs</h3>
+        </div>
+    </div>
+    <div id="links" class="section">
+        <h2>Links</h2>
+        <div id="links-container" class="corner">
+            <a href="https://redirect.sj14apps.com/sj-dialog-github" class="corner" target="_blank">
+                <img src="../img/icons/github2.png" alt="GitHub">
+                <h4>GitHib</h4>
+            </a>
+        </div>
+
+    </div>
+
+    <div id="readme" class="section">
+        <div id="markdown-container" style="margin: 20px; padding: 20px; background: hsl(var(--accent), 65%, 10%); border-radius: 20px"></div>
+    </div>
+    <script >
+        fetch('SJ-Dialog/README.md')
+            .then(res => res.text())
+            .then(md => {
+                document.getElementById('markdown-container').innerHTML = marked.parse(md);
+            })
+            .catch(err => console.error(err));
+    </script>
+    <div id="versions" class="section">
+        <h2>Versions</h2>
+        <div id="versions-container" srcData="SJ-Dialog"></div>
+
+    </div>
+    <div id="contacts" class="section"></div>
+
+    <footer id="footer"></footer>
+</div>
+<script src="../js/script.js"></script>
+<script src="../js/loadTemplates.js"></script>
+<script src="../js/updateColors.js"></script>
+<script>
+    updateColor("SJ-Dialog")
+</script>
+<script src="../js/displayChangelogs.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2YS8LF47VL"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2YS8LF47VL');
+</script>
+</body>
+</html>
