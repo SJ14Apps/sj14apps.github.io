@@ -35,8 +35,6 @@ function updateColor(name) {
 
     const item = projectsData.find(o => o.name === name);
 
-    console.log(item);
-
     let accent = item.accentColor
 
     document.body.style.setProperty(
@@ -44,9 +42,15 @@ function updateColor(name) {
         `${accent}`
     );
 
+    let color = hslToHex(accent)
     document.body.style.setProperty(
         "--nav-bg-color",
-        `${hslToHex(accent)}`
+        `${color}`
     );
+
+    const themeMeta = document.querySelector('meta[name="theme-color"]');
+    if (themeMeta) {
+        themeMeta.setAttribute("content", color);
+    }
 
 }
