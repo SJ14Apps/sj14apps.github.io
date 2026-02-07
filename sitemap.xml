@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://sj14apps.com/</loc>
-        <lastmod>2026-02-04</lastmod>
+        <lastmod>2026-02-06</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
@@ -24,5 +24,10 @@
         <loc>https://sj14apps.com/apps/JsonList/privacy_policy.html</loc>
         <lastmod>2025-11-16</lastmod>
         <priority>0.64</priority>
+    </url>
+    <url>
+        <loc>https://sj14apps.com/libs/SJ-Dialog</loc>
+        <lastmod>2026-02-06</lastmod>
+        <priority>0.80</priority>
     </url>
 </urlset>
