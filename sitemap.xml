@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://sj14apps.com/</loc>
-        <lastmod>2026-02-06</lastmod>
+        <lastmod>2026-02-08</lastmod>
         <priority>1.00</priority>
     </url>
     <url>
@@ -28,6 +28,16 @@
     <url>
         <loc>https://sj14apps.com/libs/SJ-Dialog</loc>
         <lastmod>2026-02-06</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://sj14apps.com/libs/SJ-Dialog/docs</loc>
+        <lastmod>2026-02-08</lastmod>
+        <priority>0.80</priority>
+    </url>
+    <url>
+        <loc>https://sj14apps.com/libs/Firework-android</loc>
+        <lastmod>2026-02-08</lastmod>
         <priority>0.80</priority>
     </url>
 </urlset>
