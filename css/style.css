@@ -442,16 +442,6 @@ pre {
 #projects_container a > div:hover h3  {
     color: hsl(var(--accent), 100%, 90%);
 }
-#markdown-container p img {
-    max-width: 100%;
-    object-fit: contain;
-}
-
-#markdown-container pre {
-    background: #252525;
-    padding: 10px;
-    border-radius: 20px;
-}
 
 #projects_container a > div:hover h4  {
     color: hsl(var(--accent), 90%, 75%);

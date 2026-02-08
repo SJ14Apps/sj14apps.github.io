@@ -8,6 +8,12 @@
     <meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
     <meta name="theme-color" content="#0060f4"/>
     <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+    <script src="/js/loadMd.js"></script>
+    <link rel="stylesheet" href="/css/md-style.css">
 </head>
 <body>
 <script>
@@ -16,7 +22,8 @@
         { text: "Top", href: "#home" },
         { text: "Links", href: "#links" },
         { text: "Versions", href: "#versions" },
-        { text: "Contact", href: "#contacts" }
+        { text: "Contact", href: "#contacts" },
+        { text: "Docs", href: "SJ-Dialog/docs" }
     ]
 </script>
 <div id="nav"></div>
@@ -24,7 +31,7 @@
 <div id="main">
     <div id="home" class="section">
         <div>
-            <img src="https://repository-images.githubusercontent.com/473367072/2dbc4ac2-711c-48e5-92f4-c55e083e81ac" width="130" height="130" class="corner">
+            <img src="https://repository-images.githubusercontent.com/473367072/2dbc4ac2-711c-48e5-92f4-c55e083e81ac" width="130" height="130" class="corner" style="object-fit: cover">
             <h1>SJ-Dialog</h1>
             <h3>Android Library for creating custom dialogs</h3>
         </div>
@@ -33,7 +40,7 @@
         <h2>Links</h2>
         <div id="links-container" class="corner">
             <a href="https://redirect.sj14apps.com/sj-dialog-github" class="corner" target="_blank">
-                <img src="../img/icons/github2.png" alt="GitHub">
+                <img src="/img/icons/github2.png" alt="GitHub">
                 <h4>GitHib</h4>
             </a>
         </div>
@@ -41,16 +48,12 @@
     </div>
 
     <div id="readme" class="section">
-        <div id="markdown-container" style="margin: 20px; padding: 20px; background: hsl(var(--accent), 65%, 10%); border-radius: 20px"></div>
+        <div class="markdown-container" id="readme-file"></div>
     </div>
     <script >
-        fetch('SJ-Dialog/README.md')
-            .then(res => res.text())
-            .then(md => {
-                document.getElementById('markdown-container').innerHTML = marked.parse(md);
-            })
-            .catch(err => console.error(err));
+        loadMarkdown('SJ-Dialog/README.md','readme-file')
     </script>
+
     <div id="versions" class="section">
         <h2>Versions</h2>
         <div id="versions-container" srcData="SJ-Dialog"></div>

@@ -7,7 +7,7 @@ Android library for creating custom dialogs. You can change color and background
 ## Download
 ### Step 1. Add the JitPack repository 
 Add it in your root build.gradle at the end of repositories:
-```gradle
+```txt
 allprojects {
 	repositories {
 		maven { url 'https://jitpack.io' }
@@ -16,7 +16,7 @@ allprojects {
 ```
 or in settings.gradle file:
 
-```gradle
+```txt
 dependencyResolutionManagement {
 	repositories {
 		maven { url 'https://jitpack.io' }
@@ -25,9 +25,9 @@ dependencyResolutionManagement {
 ```
 
 ### Step 2. Add the dependency
-```gradle
+```txt
 dependencies {
-	implementation 'com.github.slavce14:SJ-Dialog:1.6.1'
+	implementation 'com.github.slavce14:SJ-Dialog:1.7'
 }
 ```
 [![](https://jitpack.io/v/slavce14/SJ-Dialog.svg)](https://jitpack.io/#slavce14/SJ-Dialog)
@@ -43,13 +43,13 @@ dependencies {
 ### CustomViewDialog
 ![](https://raw.githubusercontent.com/SlaVcE14/SJ-Dialog/master/SJDialog/images/CustomViewDialog%20day-night.gif)
 ## Documentation
-* [BasicDialogDoc](/SJDialog/BasicDialogDoc.md): Documentation for BasicDialog
-* [MessageDialogDoc](/SJDialog/MessageDialogDoc.md): Documentation for MessageDialog
-* [ListDialogDoc](/SJDialog/ListDialogDoc.md): Documentation for ListDialog
-* [CustomViewDialogDoc](/SJDialog/CustomViewDialogDoc.md): Documentation for CustomViewDialog
+* [BasicDialogDoc](SJ-Dialog/docs#basic-dialog): Documentation for BasicDialog
+* [MessageDialogDoc](SJ-Dialog/docs#message-dialog): Documentation for MessageDialog
+* [ListDialogDoc](SJ-Dialog/docs#list-dialog): Documentation for ListDialog
+* [CustomViewDialogDoc](SJ-Dialog/docs#custom-dialog): Documentation for CustomViewDialog
 
 ## License:
-```
+```txt
 MIT License
 
 Copyright (c) 2022 SlaVcE
