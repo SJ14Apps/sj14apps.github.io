@@ -280,7 +280,7 @@ pre {
 #home h3 {
     margin-top: 5px;
     font-size: 30px;
-    color: #cfcfcf;
+    color: hsl(var(--accent), 100%, 90%);
 }
 
 
