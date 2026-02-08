@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SJ-Dialog</title>
+    <link rel="stylesheet" href="/css/style.css">
+
+    <link rel="icon" type="image/x-icon" href="/img/logo2.3.png">
+    <meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="theme-color" content="#0060f4"/>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+    <script src="/js/loadMd.js"></script>
+
+    <link rel="stylesheet" href="/css/md-style.css">
+</head>
+<body>
+<script>
+    const navList= [
+        { text: "Home", href: "/?noSplash" },
+        { text: "SJ-Dialog", href: "../SJ-Dialog" },
+        { text: "Top", href: "#home" },
+        { text: "Basic Dialog", href: "#basic-dialog" },
+        { text: "Message Dialog", href: "#message-dialog" },
+        { text: "List Dialog", href: "#list-dialog" },
+        { text: "Custom Dialog", href: "#custom-dialog" },
+        { text: "Contact", href: "#contacts" }
+    ]
+</script>
+<div id="nav"></div>
+
+<div id="main">
+    <div id="home" class="section">
+        <div>
+            <h1>Documentations for SJ-Dialog</h1>
+        </div>
+    </div>
+    <div id="basic-dialog" class="section">
+        <div class="markdown-container" id="basic-dialog-doc"></div>
+    </div>
+    <div id="message-dialog" class="section">
+        <div class="markdown-container" id="message-dialog-doc"></div>
+    </div>
+    <div id="list-dialog" class="section">
+        <div class="markdown-container" id="list-dialog-doc"></div>
+    </div>
+    <div id="custom-dialog" class="section">
+        <div class="markdown-container" id="custom-dialog-doc"></div>
+    </div>
+
+
+
+    <script >
+        loadMarkdown('docs/BasicDialogDoc.md','basic-dialog-doc')
+        loadMarkdown('docs/MessageDialogDoc.md','message-dialog-doc')
+        loadMarkdown('docs/ListDialogDoc.md','list-dialog-doc')
+        loadMarkdown('docs/CustomViewDialogDoc.md','custom-dialog-doc')
+    </script>
+
+    <div id="contacts" class="section"></div>
+
+    <footer id="footer"></footer>
+</div>
+<script src="/js/script.js"></script>
+<script src="/js/loadTemplates.js"></script>
+<script src="/js/updateColors.js"></script>
+<script>
+    updateColor("SJ-Dialog")
+</script>
+<script src="/js/displayChangelogs.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2YS8LF47VL"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2YS8LF47VL');
+</script>
+</body>
+</html>

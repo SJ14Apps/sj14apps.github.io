@@ -11,11 +11,11 @@ body {
 
 @font-face {
     font-family: KanitRegular;
-    src: url("../font/Kanit-Regular.ttf");
+    src: url("/font/Kanit-Regular.ttf");
 }
 @font-face {
     font-family: KanitLight;
-    src: url("../font/Kanit-Light.ttf");
+    src: url("/font/Kanit-Light.ttf");
 }
 a {
     text-decoration: none;
@@ -96,7 +96,7 @@ body:after {
     top: 10px;
     right: 10px;
     visibility: hidden;
-    background: url("../img/icons/menu.png") center;
+    background: url("/img/icons/menu.png") center;
     background-size: cover;
     transition: .3s;
 

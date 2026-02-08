@@ -35,8 +35,8 @@ function addEvents() {
 function showNav() {
     document.getElementById('nav_ul').classList.toggle("open");
     if (isNavOpen) {
-        navBtn.style.backgroundImage = "url('../img/icons/menu.png') ";
-    } else navBtn.style.backgroundImage = "url('../img/icons/menu_close.png') ";
+        navBtn.style.backgroundImage = "url('/img/icons/menu.png') ";
+    } else navBtn.style.backgroundImage = "url('/img/icons/menu_close.png') ";
     isNavOpen = !isNavOpen;
 }
 

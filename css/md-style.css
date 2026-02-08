@@ -1,0 +1,26 @@
+.markdown-container {
+    margin: 20px;
+    padding: 20px;
+    background: hsl(var(--accent), 65%, 10%);
+    border-radius: 20px;
+}
+
+.markdown-container p img {
+    max-width: min(700px, 100%);
+    object-fit: contain;
+}
+
+
+.hljs {
+    border-radius: 20px;
+    padding: 10px;
+    background: hsl(var(--accent) ,30%, 20%);
+}
+
+.markdown-container a {
+    color: hsl(var(--accent), 95%, 50%);
+}
+
+.markdown-container a:hover {
+    color: white;
+}

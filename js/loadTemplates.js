@@ -56,17 +56,17 @@ function loadSplash(){
     const page = document.body.dataset.page;
     if (page === "home"){
         let script = document.createElement("script");
-        script.src = "../js/scriptHome.js";
+        script.src = "/js/scriptHome.js";
         document.body.appendChild(script);
     }
 }
 
-loadHTML("nav", "../template/nav.html",
+loadHTML("nav", "/template/nav.html",
     () => {
         loadNav()
         updateNav()
         loadSplash()
     }
 )
-loadHTML("contacts", "../template/contacts.html")
-loadHTML("footer", "../template/footer.html")
+loadHTML("contacts", "/template/contacts.html")
+loadHTML("footer", "/template/footer.html")
