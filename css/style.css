@@ -5,8 +5,8 @@
 
 }
 body {
-    --nav-bg-color : #0060f4;
     --accent: 216;
+    --nav-bg-color : hsl(var(--accent), 100%, 50%);
 }
 
 @font-face {
