@@ -7,6 +7,8 @@
 body {
     --accent: 216;
     --nav-bg-color : hsl(var(--accent), 100%, 50%);
+    --gray-color: hsl(var(--accent), 30%, 10%);
+    --gray-color2: hsl(var(--accent), 30%, 15%);
 }
 
 @font-face {
