@@ -11,7 +11,7 @@ listDialog.Builder(this)
        	})
        	.show();
 ```
-![ListDialog example 1](https://raw.githubusercontent.com/SlaVcE14/SJ-Dialog/master/SJDialog/images/ListDialog%20example%201.png)
+![ListDialog example 1](https://raw.githubusercontent.com/SJ14Apps/SJ-Dialog/master/SJDialog/images/ListDialog%20example%201.png)
 #### List of Objects
 ```java
 class ExampleObject{
@@ -36,7 +36,7 @@ listDialog.Builder(this)
                 })
        	.show();
 ```
-![ListDialog example 2](https://raw.githubusercontent.com/SlaVcE14/SJ-Dialog/master/SJDialog/images/ListDialog%20example%202.png)
+![ListDialog example 2](https://raw.githubusercontent.com/SJ14Apps/SJ-Dialog/master/SJDialog/images/ListDialog%20example%202.png)
 #### ArrayList of Objects with two values
 ```java
 class ExampleObject{
@@ -75,7 +75,7 @@ listDialog.Builder(this)
                 })
    	.show();
 ```
-![ListDialog example 3](https://raw.githubusercontent.com/SlaVcE14/SJ-Dialog/master/SJDialog/images/ListDialog%20example%203.png)
+![ListDialog example 3](https://raw.githubusercontent.com/SJ14Apps/SJ-Dialog/master/SJDialog/images/ListDialog%20example%203.png)
 #### Selecting multiple items in a list
 ```java
 ArrayList<String> stringArrayList = new ArrayList<>();
@@ -94,19 +94,19 @@ listDialog.Builder(this)
               	})
 	.show();
 ```
-![ListDialog example 4](https://raw.githubusercontent.com/SlaVcE14/SJ-Dialog/master/SJDialog/images/ListDialog%20example%204.png)
+![ListDialog example 4](https://raw.githubusercontent.com/SJ14Apps/SJ-Dialog/master/SJDialog/images/ListDialog%20example%204.png)
 ## Builder
 Apply the default theme to a dialog
 ```java
 listDialog.Builder(context)
 ```
-![ListDialog day-night](https://raw.githubusercontent.com/SlaVcE14/SJ-Dialog/master/SJDialog/images/ListDialog%20day-night.png)
+![ListDialog day-night](https://raw.githubusercontent.com/SJ14Apps/SJ-Dialog/master/SJDialog/images/ListDialog%20day-night.png)
 
 Apply the app theme to a dialog **(only works with material3 theme)**
 ```java
 listDialog.Builder(context,true)
 ```
-![ListDialog day-night theme](https://raw.githubusercontent.com/SlaVcE14/SJ-Dialog/master/SJDialog/images/ListDialog%20day-night.gif)
+![ListDialog day-night theme](https://raw.githubusercontent.com/SJ14Apps/SJ-Dialog/master/SJDialog/images/ListDialog%20day-night.gif)
 
 Apply the custom theme to a dialog **(only works with material3 theme)**
 ```java
@@ -121,7 +121,7 @@ By default dialog colors will be set to material3 dynamic colors. With this meth
 ```java
 listDialog.setOldTheme();
 ```
-![ListDialog oldTheme](https://raw.githubusercontent.com/SlaVcE14/SJ-Dialog/master/SJDialog/images/ListDialog%20oldTheme.png)
+![ListDialog oldTheme](https://raw.githubusercontent.com/SJ14Apps/SJ-Dialog/master/SJDialog/images/ListDialog%20oldTheme.png)
 ## DialogPreset
 With **DialogPreset**, you can create customized dialogs with consistent customizations. Simply create a DialogPreset and implement it across all dialogs that you want to have that customizations.
 ### Creating a DialogPreset
@@ -165,7 +165,7 @@ You can add item in a list by setting [RecyclerView Adapter](#set-recyclerview-a
 listDialog.setAdapter(recyclerViewAdapter);
 ```
 ### setItems
-This method uses [DefaultListAdapter](/SJDialog/src/main/java/com/sjapps/library/customdialog/adapter/DefaultListAdapter.java) if the argument is array of Strings and [DefaultListAdapterGeneric](/SJDialog/src/main/java/com/sjapps/library/customdialog/adapter/DefaultListAdapterGeneric.java) for array of Objects or ArrayList.
+This method uses [DefaultListAdapter](https://github.com/SJ14Apps/SJ-Dialog/blob/master/SJDialog/src/main/java/com/sjapps/library/customdialog/adapter/DefaultListAdapter.java) if the argument is array of Strings and [DefaultListAdapterGeneric](https://github.com/SJ14Apps/SJ-Dialog/blob/master/SJDialog/src/main/java/com/sjapps/library/customdialog/adapter/DefaultListAdapterGeneric.java) for array of Objects or ArrayList.
 
 #### Array of Strings
 You need to use [setSelectableList()](#select-multiple-items-in-a-list) firstly or add [onListItemClick](#array-of-strings-and-onlistitemclick)
@@ -272,7 +272,7 @@ listDialog.setItems(arrayList, new ListItemValues<ExampleObject>() {
 });
 ```
 ### setImageItems
-Creating ArrayList of [ImageListItem](/SJDialog/src/main/java/com/sjapps/library/customdialog/ImageListItem.java)
+Creating ArrayList of [ImageListItem](https://github.com/SJ14Apps/SJ-Dialog/blob/master/SJDialog/src/main/java/com/sjapps/library/customdialog/ImageListItem.java)
 ```java
 ArrayList<ImageListItem> listItems = new ArrayList<>();
 listItems.add(new ImageListItem("item1", drawable1));

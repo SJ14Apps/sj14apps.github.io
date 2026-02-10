@@ -2,6 +2,8 @@
 Simple and easy-to-use Android library for creating fireworks
 
 ## Download
+> [!NOTE]
+> this library was moved to `com.github.sj14apps`!
 ### Step 1. Add the JitPack repository 
 Add it in your root build.gradle at the end of repositories:
 ```txt
@@ -24,10 +26,10 @@ dependencyResolutionManagement {
 ### Step 2. Add the dependency
 ```txt
 dependencies {
-	implementation 'com.github.slavce14:firework-android:1.0'
+	implementation 'com.github.sj14apps:firework-android:1.0'
 }
 ```
-[![](https://jitpack.io/v/SlaVcE14/Firework-android.svg)](https://jitpack.io/#SlaVcE14/Firework-android)
+[![](https://jitpack.io/v/SJ14Apps/Firework-android.svg)](https://jitpack.io/#SJ14Apps/Firework-android)
 
 ## [Example code](https://github.com/SlaVcE14/Firework-android/tree/main/app/src/main)
 <video width="320" controls>
