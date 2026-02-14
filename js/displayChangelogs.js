@@ -13,30 +13,36 @@ function loadJSON(filePath) {
     }
 }
 
-let data = loadJSON(changelogsContainer.getAttribute('srcData')+'/changelogs.json');
-data.forEach(l => {
+function displayVersions() {
+    changelogsContainer.innerHTML = '';
 
-    let changelog = document.createElement('div')
-    changelog.classList.add('corner')
-    let title = document.createElement('h3')
-    title.textContent = l.title
-    let log = document.createElement('pre')
-    let header = document.createElement('span')
-    header.textContent = 'Changelog:'
-    header.style.fontSize = '17px'
-    let code = document.createElement('code')
-    code.textContent = l.changelog.replaceAll(' ', '  ');
-    donloadBtn = document.createElement('a')
-    donloadBtn.textContent = 'Download'
-    donloadBtn.href = './' + changelogsContainer.getAttribute('srcData') + '/versions/' + l.file
-    log.appendChild(header)
-    log.appendChild(document.createTextNode("\n\n"))
-    log.appendChild(code)
-    changelog.appendChild(title)
-    changelog.appendChild(log)
-    if (l.file !== undefined)
-        changelog.appendChild(donloadBtn)
+    let data = loadJSON(changelogsContainer.getAttribute('srcData') + '/changelogs.json');
+    data.forEach(l => {
 
-    changelogsContainer.appendChild(changelog)
+        let changelog = document.createElement('div')
+        changelog.classList.add('corner')
+        let title = document.createElement('h3')
+        title.textContent = l.title
+        let log = document.createElement('pre')
+        let header = document.createElement('span')
+        header.textContent = 'Changelog:'
+        header.style.fontSize = '17px'
+        let code = document.createElement('code')
+        code.textContent = l.changelog.replaceAll(' ', '  ');
+        donloadBtn = document.createElement('a')
+        donloadBtn.textContent = 'Download'
+        donloadBtn.href = './' + changelogsContainer.getAttribute('srcData') + '/versions/' + l.file
+        log.appendChild(header)
+        log.appendChild(document.createTextNode("\n\n"))
+        log.appendChild(code)
+        changelog.appendChild(title)
+        changelog.appendChild(log)
+        if (l.file !== undefined)
+            changelog.appendChild(donloadBtn)
 
-})
+        changelogsContainer.appendChild(changelog)
+
+    })
+}
+displayVersions()
+

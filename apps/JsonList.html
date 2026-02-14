@@ -18,6 +18,8 @@
 </head>
 <body>
 <script>
+    const pageName = "JsonList"
+
     const navList= [
         { text: "Home", href: "../?noSplash" },
         { text: "Top", href: "#home" },
@@ -90,7 +92,13 @@
         </div>
     </div>
     <div id="versions" class="section">
-        <h2>Versions</h2>
+        <div id="versions-container-title">
+            <h2>Versions</h2>
+            <div id="versions-type">
+                <a href="javascript:versionType(0)" class="active">stable</a>
+                <a href="javascript:versionType(1, 'beta')">beta</a>
+            </div>
+        </div>
         <div id="versions-container" srcData="JsonList"></div>
 
     </div>
@@ -105,6 +113,7 @@
     updateColor("Json List")
 </script>
 <script src="/js/displayChangelogs.js"></script>
+<script src="/js/switchVersionType.js"></script>
 
 <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-2YS8LF47VL"></script>

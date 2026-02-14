@@ -264,6 +264,35 @@ pre {
     font-size: 30px;
 }
 
+#versions-container-title {
+    margin: 10px 30px;
+    display: flex;
+    align-items: center;
+}
+
+#versions-container-title > h2 {
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+#versions-type > a {
+    margin-left: 10px;
+    text-align: center;
+    background: var(--gray-color);
+    padding: 10px;
+    border-radius: 20px;
+    transition: .3s;
+}
+#versions-type > a.active {
+    background: hsl(var(--accent), 100%, 50%);
+    color: white;
+}
+
+#versions-type > a:hover {
+    background: hsl(var(--accent), 100%, 50%);
+    color: white;
+}
+
 #home {
     min-height: 90vh;
     flex-flow: column;
