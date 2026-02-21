@@ -34,12 +34,10 @@ function displayVersions() {
         downloadBtn.href = './' + changelogsContainer.getAttribute('srcData') + '/versions/' + l.file
         let timestamp = document.createElement('span')
         timestamp.textContent = new Date(l.timestamp).toLocaleDateString(undefined, {
-          day: '2-digit',
+          day: 'numeric',
           month: 'long',
           year: 'numeric'
-        });
-        
-        
+        });  
         log.appendChild(header)
         log.appendChild(document.createTextNode("\n\n"))
         log.appendChild(code)
