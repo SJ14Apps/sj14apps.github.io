@@ -29,16 +29,26 @@ function displayVersions() {
         header.style.fontSize = '17px'
         let code = document.createElement('code')
         code.textContent = l.changelog.replaceAll(' ', '  ');
-        donloadBtn = document.createElement('a')
-        donloadBtn.textContent = 'Download'
-        donloadBtn.href = './' + changelogsContainer.getAttribute('srcData') + '/versions/' + l.file
+        downloadBtn = document.createElement('a')
+        downloadBtn.textContent = 'Download'
+        downloadBtn.href = './' + changelogsContainer.getAttribute('srcData') + '/versions/' + l.file
+        let timestamp = document.createElement('span')
+        timestamp.textContent = new Date(l.timestamp).toLocaleDateString(undefined, {
+          day: '2-digit',
+          month: 'long',
+          year: 'numeric'
+        });
+        
+        
         log.appendChild(header)
         log.appendChild(document.createTextNode("\n\n"))
         log.appendChild(code)
-        changelog.appendChild(title)
+        changelog.appendChild(title) 
+        if (l.timestamp !== undefined)
+            changelog.appendChild(timestamp)
         changelog.appendChild(log)
         if (l.file !== undefined)
-            changelog.appendChild(donloadBtn)
+            changelog.appendChild(downloadBtn)
 
         changelogsContainer.appendChild(changelog)
 
