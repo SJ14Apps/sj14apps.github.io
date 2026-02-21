@@ -16,7 +16,7 @@ function loadJSON(filePath) {
 function displayVersions() {
     changelogsContainer.innerHTML = '';
 
-    let data = loadJSON(changelogsContainer.getAttribute('srcData') + '/changelogs.json');
+    let data = loadJSON(changelogsPath + '/changelogs.json');
     data.forEach(l => {
 
         let changelog = document.createElement('div')
@@ -31,7 +31,7 @@ function displayVersions() {
         code.textContent = l.changelog.replaceAll(' ', '  ');
         downloadBtn = document.createElement('a')
         downloadBtn.textContent = 'Download'
-        downloadBtn.href = './' + changelogsContainer.getAttribute('srcData') + '/versions/' + l.file
+        downloadBtn.href = './' + changelogsPath + '/versions/' + l.file
         let timestamp = document.createElement('span')
         timestamp.textContent = new Date(l.timestamp).toLocaleDateString(undefined, {
           day: 'numeric',
@@ -52,5 +52,6 @@ function displayVersions() {
 
     })
 }
+changelogsPath = pageName;
 displayVersions()
 

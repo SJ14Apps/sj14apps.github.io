@@ -54,3 +54,7 @@ function updateColor(name) {
     }
 
 }
+
+if (typeof projectName !== "undefined") {
+    updateColor(projectName) 
+}else updateColor(pageName)

@@ -1,5 +1,4 @@
 let btns = document.getElementById("versions-type").children;
-let versionsContainer = document.getElementById("versions-container");
 
 function versionType(id, path) {
     for (let i = 0;  i < btns.length; i++) {
@@ -8,8 +7,8 @@ function versionType(id, path) {
     btns[id].classList.add("active");
 
     if (path === undefined) {
-        versionsContainer.setAttribute("srcData",`${pageName}`)
-    }else versionsContainer.setAttribute("srcData",`${pageName}/${path}`)
+        changelogsPath = pageName;
+    }else changelogsPath = `${pageName}/${path}`
     displayVersions()
 
 }
