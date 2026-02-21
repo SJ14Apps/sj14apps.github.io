@@ -2,6 +2,7 @@
   {
     "title" : "v1.9.2",
     "changelog": "New\n- Automatically check for update and notify in the app if it has new version",
-    "file" : "JsonList_1.9.2.apk"
+    "file" : "JsonList_1.9.2.apk",
+    "timestamp": 1771000260000
   }
 ]
