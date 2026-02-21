@@ -28,5 +28,11 @@
     "changelog": "- UI update\n- API update\n- fix incorrect time display\n- App now checks for update",
     "file" : "Weather_1.5.2.apk",
     "timestamp": 1717182360000
+  },
+  {
+    "title" : "v1.5",
+    "changelog": "Bug fixes\n- fix String to float conversion\n- fix location permission\n- fix crash on Android 6\n- fix Hourly list ui bug\n\nUpdate\n- Location request\n- Alerts Update\n- Widget Update\n\nUI Update\n- Loading animation\n- Background renderer\n- Insets\n- Outline on daily and hourly list\n- Layout update\n > Buttons\n > Switch\n > Snackbar\n > Radius and margin\n- add animations\n\nNew\n- Per app language preferences\n- Themed icon\n- UV index info\n- Splash screen for Android 12+\n- translate to Macedonian\n- Background transition\n- Dialog Queue\n\nEvents\n- New Year",
+    "file" : "Weather_1.5.apk",
+    "timestamp": 1717182360000
   }
 ]
