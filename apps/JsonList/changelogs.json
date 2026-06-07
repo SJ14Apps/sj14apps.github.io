@@ -1,7 +1,7 @@
 [
   {
     "title" : "v1.10",
-    "changelog": "Bugfix\n- Fixed app not showing in \"Open with...\" dialog on some file explorers\n\nNew\n- Automatically check for update and notify in the app if it has new version\n\nUpdates\n- UI update for list item for object or array\n- Update display name of array\n",
+    "changelog": "Bugfix\n- Fixed app not showing in \"Open with...\" dialog on some file explorers\n\nNew\n- Automatically check for update and notify in the app if it has new version\n\nUpdates\n- UI update for list item for object or array\n- Update display name of array",
     "file" : "JsonList_1.10.apk",
     "timestamp": 1772382900000
   },
