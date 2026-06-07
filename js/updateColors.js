@@ -37,6 +37,8 @@ function updateColor(name) {
 
     let accent = item.accentColor
 
+    document.querySelector('#home div img').style.viewTransitionName = "a-" + item.name.replaceAll(" ", "-")
+
     document.body.style.setProperty(
         "--accent",
         `${accent}`

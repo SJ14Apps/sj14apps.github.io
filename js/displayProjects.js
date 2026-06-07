@@ -33,6 +33,7 @@ data.forEach(a => {
     appContainer.classList.add('corner')
     let img = document.createElement('img')
     img.classList.add('corner')
+    img.style.viewTransitionName = "a-" + a.name.replaceAll(" ", "-")
     img.src = image
     img.alt = a.name
     let title = document.createElement('h3')
