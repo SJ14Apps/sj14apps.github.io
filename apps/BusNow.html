@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bus Now</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/x-icon" href="BusNow/icon.png">
+    <meta name="viewport" content="width=320; initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+    <meta name="theme-color" content="#0060f4"/>
+</head>
+<body>
+<script>
+    const pageName = "BusNow"
+    const projectName = "Bus Now - Skopje"
+
+    const navList= [
+        { text: "Home", href: "../?noSplash" },
+        { text: "Top", href: "#home" },
+        { text: "Links", href: "#links" },
+        { text: "Versions", href: "#versions" },
+        { text: "Contact", href: "#contacts" },
+        { text: "Privacy Policy", href: `${pageName}/privacy_policy` }
+    ]
+
+    const screenshots = [
+        { src: `${pageName}/screenshots/Screenshot_1.jpg` },
+        { src: `${pageName}/screenshots/Screenshot_2.jpg` },
+        { src: `${pageName}/screenshots/Screenshot_3.jpg` },
+        { src: `${pageName}/screenshots/Screenshot_4.jpg` },
+        { src: `${pageName}/screenshots/Screenshot_5.jpg` },
+        { src: `${pageName}/screenshots/Screenshot_6.jpg` },
+    ]
+</script>
+<div id="nav"></div>
+<div id="bg">
+    <div class="blobs">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+</div>
+<div id="main">
+    <div id="home" class="section">
+        <div>
+            <img src="BusNow/icon.png" width="130" height="130" class="corner">
+            <h1>Bus Now - Skopje</h1>
+            <h3>Real-time bus tracking for JSP Skopje</h3>
+        </div>
+    </div>
+    <div id="links" class="section">
+        <h2>Links</h2>
+        <div id="links-container" class="corner">
+            <a href="https://redirect.sj14apps.com/bus-now-play" class="corner" target="_blank">
+                <img src="/img/icons/play-logo.png" alt="Play Store">
+                <h4>Play Store</h4>
+            </a>
+        </div>
+    </div>
+    <div id="screenshots" class="section">
+        <h2>Screenshots</h2>
+        <div id="screenshots-container">
+
+        </div>
+    </div>
+    <div id="versions" class="section">
+        <h2>Versions</h2>
+        <div id="versions-container"></div>
+
+    </div>
+    <div id="contacts" class="section"></div>
+
+    <footer id="footer"></footer>
+</div>
+<script src="/js/script.js"></script>
+<script src="/js/loadTemplates.js"></script>
+<script src="/js/updateColors.js"></script>
+<script src="/js/displayChangelogs.js"></script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-2YS8LF47VL"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-2YS8LF47VL');
+</script>
+</body>
+</html>

@@ -8,6 +8,14 @@
     "accentColor": 216
   },
   {
+    "name": "Bus Now - Skopje",
+    "type": "Android App",
+    "image": "https://sj14apps.com/img/projects/jspnow.png",
+    "link": "https://sj14apps.com/apps/BusNow",
+    "description": "Real-time bus tracking for JSP Skopje",
+    "accentColor": 1
+  },
+  {
     "name": "SJ-Dialog",
     "type": "Android library",
     "image": "https://repository-images.githubusercontent.com/473367072/2dbc4ac2-711c-48e5-92f4-c55e083e81ac",

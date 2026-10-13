@@ -1,4 +1,5 @@
 let changelogsContainer = document.getElementById('versions-container')
+let screenshotsContainer = document.getElementById('screenshots-container')
 
 function loadJSON(filePath) {
     let xhr = new XMLHttpRequest();
@@ -52,6 +53,32 @@ function displayVersions() {
 
     })
 }
+
+function displayScreenShots() {
+    screenshotsContainer.innerHTML = '';
+    if (!screenshots)
+        return;
+
+    screenshots.forEach(value => {
+        let a = document.createElement('a')
+        let img = document.createElement('img')
+
+        a.href = value.src;
+        img.src = value.src;
+        img.classList.add("corner");
+        if (value.width)
+            img.width = value.width;
+        a.appendChild(img);
+        screenshotsContainer.appendChild(a);
+    })
+
+}
+
 changelogsPath = pageName;
 displayVersions()
 
+
+
+if (screenshotsContainer){
+    displayScreenShots()
+}
