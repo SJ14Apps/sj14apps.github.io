@@ -300,7 +300,20 @@ pre {
     align-items: center;
     margin: 10px 0;
     text-align: center;
+    animation: slideUpFade 0.8s ease-out forwards;
 }
+
+@keyframes slideUpFade {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
 #home h1 {
     margin-bottom: 5px;
     font-size: 60px;
