@@ -34,17 +34,20 @@ function updateNav(){
     let menu = document.querySelectorAll('#nav_ul li a');
 
     window.addEventListener('scroll', () => {
+        let top = window.scrollY;
 
         sections.forEach(i => {
-            let top = window.scrollY;
             let offset = i.offsetTop - 150;
             let height = i.offsetHeight;
             let id = i.getAttribute('id');
-            if (top >= offset && top < offset + height){
-                menu.forEach(link => {
-                    link.classList.remove('active');
-                    document.querySelector('#nav_ul li a[href*=' + id + ']').classList.add('active');
-                })
+            if (id && top >= offset && top < offset + height){
+                let target = document.querySelector('#nav_ul li a[href*="' + id + '"]');
+                if (target) {
+                    menu.forEach(link => {
+                        link.classList.remove('active');
+                    });
+                    target.classList.add('active');
+                }
             }
         });
     })
