@@ -56,22 +56,45 @@ function displayVersions() {
 
 function displayScreenShots() {
     screenshotsContainer.innerHTML = '';
-    if (!screenshots)
+    if (typeof screenshots === 'undefined' || !screenshots || screenshots.length === 0)
         return;
 
-    screenshots.forEach(value => {
+    screenshots.forEach((value, index) => {
         let a = document.createElement('a')
         let img = document.createElement('img')
 
         a.href = value.src;
+        a.setAttribute('data-index', index);
+        a.setAttribute('aria-label', `View screenshot ${index + 1}`);
         img.src = value.src;
+        img.alt = value.alt || `Screenshot ${index + 1}`;
         img.classList.add("corner");
         if (value.width)
             img.width = value.width;
         a.appendChild(img);
+
+        a.addEventListener('click', (e) => {
+            e.preventDefault();
+            if (typeof openGallery === 'function') {
+                openGallery(index);
+            }
+        });
+
         screenshotsContainer.appendChild(a);
     })
 
+    if (typeof initGallery === 'function') {
+        initGallery(screenshots);
+    } else {
+        let script = document.createElement('script');
+        script.src = '/js/gallery.js';
+        script.onload = () => {
+            if (typeof initGallery === 'function') {
+                initGallery(screenshots);
+            }
+        };
+        document.body.appendChild(script);
+    }
 }
 
 changelogsPath = pageName;
